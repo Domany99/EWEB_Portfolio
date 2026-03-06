@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Schmale Bildschirme: vertikales Menü */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+#myButton {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: chartreuse;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#myButton:hover {
+    background-color: lightblue;
+}
+.hidden {
+    display: none;
+}
+
+#hiddenText {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
