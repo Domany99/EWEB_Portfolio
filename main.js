@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
     initNavHighlight();
+    initHamburgerMenu();
 });
 
 /* ═══════════════════════════════════════════
@@ -68,4 +69,32 @@ function initNavHighlight() {
     );
 
     sections.forEach((section) => observer.observe(section));
+}
+
+/* ═══════════════════════════════════════════
+   Hamburger Menu
+   Öffnet/schliesst die Navigation auf
+   kleinen Bildschirmen.
+   ═══════════════════════════════════════════ */
+
+function initHamburgerMenu() {
+    const hamburger = document.querySelector('.nav-hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (!hamburger || !navLinks) return;
+
+    hamburger.addEventListener('click', () => {
+        const isOpen = hamburger.classList.toggle('open');
+        navLinks.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Menü schliessen wenn ein Link geklickt wird
+    navLinks.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('open');
+            navLinks.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+        });
+    });
 }
