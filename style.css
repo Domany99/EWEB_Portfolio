@@ -405,6 +405,62 @@ section {
     letter-spacing: 0.05em;
 }
 
+/* ─── CV Section ─── */
+
+.cv-section {
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--border);
+}
+
+.cv-title {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+}
+
+.cv-item {
+    margin-bottom: 2rem;
+}
+
+.cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.cv-position {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+
+.cv-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.cv-company {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 0.25rem 0 0.5rem 0;
+}
+
+.cv-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    margin: 0;
+}
+
 /* ═══════════════════════════════════════════
    Projects
    ═══════════════════════════════════════════ */
@@ -434,7 +490,7 @@ section {
 
 .project-thumbnail {
     height: 220px;
-    background: linear-gradient(135deg, var(--accent-light) 0%, var(--bg-alt) 100%);
+    background: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,16 +498,10 @@ section {
     font-size: 3rem;
     font-weight: 800;
     color: var(--accent);
-    opacity: 0.3;
     position: relative;
     overflow: hidden;
-}
-
-.project-thumbnail::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, transparent 50%, rgba(255, 255, 255, 0.6) 100%);
+    object-fit: contain;
+    width: 100%;
 }
 
 .project-info {
