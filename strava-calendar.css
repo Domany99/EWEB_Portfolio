@@ -4,11 +4,12 @@
    ═══════════════════════════════════════════ */
 
 .strava-calendar {
-    align-self: start;
     margin-top: 2.5rem;
     padding-top: 2.5rem;
     border-top: 1px solid var(--border);
     max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Auf Mobile: Trennlinie nach oben, da der Kalender dann
