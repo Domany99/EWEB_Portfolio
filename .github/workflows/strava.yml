@@ -1,0 +1,42 @@
+name: Strava-Aktivitäten aktualisieren
+
+# Läuft täglich um 04:00 UTC und bei jedem manuellen Anstoß
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+# Erlaubt der Action, activities.json ins Repo zurückzuschreiben
+permissions:
+  contents: write
+
+jobs:
+  update-activities:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Aktivitäten von Strava holen
+        env:
+          STRAVA_CLIENT_ID: ${{ secrets.STRAVA_CLIENT_ID }}
+          STRAVA_CLIENT_SECRET: ${{ secrets.STRAVA_CLIENT_SECRET }}
+          STRAVA_REFRESH_TOKEN: ${{ secrets.STRAVA_REFRESH_TOKEN }}
+        run: node scripts/fetch-strava.mjs
+
+      - name: activities.json committen, falls geändert
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add activities.json
+          if git diff --staged --quiet; then
+            echo "Keine Änderungen an activities.json."
+          else
+            git commit -m "Strava-Aktivitäten aktualisiert ($(date -u +%Y-%m-%d))"
+            git push
+          fi
