@@ -1,0 +1,24 @@
+/* Partikel-Canvas für die Hero-Section.
+   Liegt hinter dem Inhalt und fängt keine Klicks ab. */
+
+.hero-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Hero-Inhalt über das Canvas heben.
+   Die Hero ist bereits position: relative (in style.css),
+   daher reicht z-index auf den direkten Kindern. */
+.hero > *:not(.hero-particles):not(.scroll-indicator) {
+    position: relative;
+    z-index: 1;
+}
+
+.scroll-indicator {
+    z-index: 1;
+}
