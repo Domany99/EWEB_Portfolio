@@ -4,9 +4,21 @@
    ═══════════════════════════════════════════ */
 
 .strava-calendar {
+    align-self: start;
     margin-top: 2.5rem;
     padding-top: 2.5rem;
     border-top: 1px solid var(--border);
+    max-width: 420px;
+}
+
+/* Auf Mobile: Trennlinie nach oben, da der Kalender dann
+   unter dem About-Block gestapelt wird */
+@media (max-width: 768px) {
+    .strava-calendar {
+        margin-top: 2.5rem;
+        padding-top: 2.5rem;
+        border-top: 1px solid var(--border);
+    }
 }
 
 .strava-cal-head {
