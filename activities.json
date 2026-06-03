@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-06-02T08:40:17.464Z",
+  "updated_at": "2026-06-03T08:57:34.068Z",
   "activities": [
+    {
+      "id": 18761360701,
+      "name": "Evening Weight Training",
+      "type": "WeightTraining",
+      "date": "2026-06-02T20:38:16Z",
+      "distance_km": 0,
+      "moving_time_min": 70,
+      "elevation_m": 0
+    },
     {
       "id": 18704148801,
       "name": "Afternoon Weight Training",
