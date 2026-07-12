@@ -1,6 +1,33 @@
 {
-  "updated_at": "2026-07-11T06:16:56.920Z",
+  "updated_at": "2026-07-12T06:35:42.800Z",
   "activities": [
+    {
+      "id": 19274956704,
+      "name": "Evening Workout",
+      "type": "Workout",
+      "date": "2026-07-11T19:11:43Z",
+      "distance_km": 0,
+      "moving_time_min": 24,
+      "elevation_m": 0
+    },
+    {
+      "id": 19269392151,
+      "name": "Afternoon Workout",
+      "type": "Workout",
+      "date": "2026-07-11T15:07:00Z",
+      "distance_km": 0,
+      "moving_time_min": 27,
+      "elevation_m": 0
+    },
+    {
+      "id": 19267532097,
+      "name": "Afternoon Workout",
+      "type": "Workout",
+      "date": "2026-07-11T13:05:38Z",
+      "distance_km": 0,
+      "moving_time_min": 20,
+      "elevation_m": 0
+    },
     {
       "id": 19229731991,
       "name": "Afternoon Weight Training",
@@ -872,33 +899,6 @@
       "date": "2026-03-08T11:22:08Z",
       "distance_km": 0,
       "moving_time_min": 69,
-      "elevation_m": 0
-    },
-    {
-      "id": 17635715640,
-      "name": "Afternoon Walk",
-      "type": "Walk",
-      "date": "2026-03-07T13:48:12Z",
-      "distance_km": 1.9,
-      "moving_time_min": 20,
-      "elevation_m": 2
-    },
-    {
-      "id": 17613816659,
-      "name": "Afternoon Weight Training",
-      "type": "WeightTraining",
-      "date": "2026-03-05T15:00:21Z",
-      "distance_km": 0,
-      "moving_time_min": 50,
-      "elevation_m": 0
-    },
-    {
-      "id": 17605864334,
-      "name": "Night Run",
-      "type": "Run",
-      "date": "2026-03-04T21:06:31Z",
-      "distance_km": 2.3,
-      "moving_time_min": 15,
       "elevation_m": 0
     }
   ]
