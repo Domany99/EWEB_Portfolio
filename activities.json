@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-09-02T08:34:02.376Z",
+  "updated_at": "2026-09-03T08:42:20.213Z",
   "activities": [
+    {
+      "id": 20006905013,
+      "name": "Morning Hike",
+      "type": "Hike",
+      "date": "2026-09-02T10:59:18Z",
+      "distance_km": 12.5,
+      "moving_time_min": 189,
+      "elevation_m": 338
+    },
     {
       "id": 19986097616,
       "name": "Morning Weight Training",
@@ -891,15 +900,6 @@
       "distance_km": 0,
       "moving_time_min": 72,
       "elevation_m": 0
-    },
-    {
-      "id": 18026004782,
-      "name": "Lunch Ride",
-      "type": "Ride",
-      "date": "2026-04-08T12:52:37Z",
-      "distance_km": 20.3,
-      "moving_time_min": 65,
-      "elevation_m": 246
     }
   ]
 }
