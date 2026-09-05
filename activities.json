@@ -1,6 +1,15 @@
 {
-  "updated_at": "2026-09-04T08:37:29.076Z",
+  "updated_at": "2026-09-05T08:10:44.851Z",
   "activities": [
+    {
+      "id": 20030741043,
+      "name": "Morning Weight Training",
+      "type": "WeightTraining",
+      "date": "2026-09-04T09:38:45Z",
+      "distance_km": 0,
+      "moving_time_min": 79,
+      "elevation_m": 0
+    },
     {
       "id": 20020201123,
       "name": "Afternoon Weight Training",
@@ -890,15 +899,6 @@
       "date": "2026-04-11T12:59:30Z",
       "distance_km": 0,
       "moving_time_min": 80,
-      "elevation_m": 0
-    },
-    {
-      "id": 18055134159,
-      "name": "Afternoon Workout",
-      "type": "Workout",
-      "date": "2026-04-10T17:17:41Z",
-      "distance_km": 0,
-      "moving_time_min": 29,
       "elevation_m": 0
     }
   ]
